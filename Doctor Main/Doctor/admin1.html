@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login</title>
+    <link rel="stylesheet" href="styles4.css">
+</head>
+<body>
+    <div class="login-section">
+        <h2>Login</h2>
+        <form class="login-form" id="loginForm">
+            <label for="email-username">Email/Username:</label>
+            <input type="text" id="email-username" name="email-username" placeholder="Enter email or username">
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter password">
+
+            <button type="submit">Login</button>
+        </form>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const loginForm = document.getElementById('loginForm');
+
+            loginForm.addEventListener('submit', (event) => {
+                event.preventDefault();
+
+                const username = document.getElementById('email-username').value;
+                const password = document.getElementById('password').value;
+
+                // Perform login authentication (you can replace this with actual logic)
+                if (username === 'Rohit' && password === 'password') {
+                    // Redirect to the dashboard on successful login
+                    window.location.href = 'admin.html';
+                }else if (username === 'Sanjana' && password === 'damdam') {
+                    // Redirect to the dashboard on successful login
+                    window.location.href = 'admin.html';
+                    
+                }else {
+                    alert('Invalid login credentials');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Doctor Details</title>
+    <link rel="stylesheet" href="styles1.css">
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.6.0/dist/web3.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>View Doctor Details</h1>
+
+
+        
+        <form id="viewDoctorForm" onsubmit="viewDoctor(event)">
+            <label for="viewDoctorId">Doctor Id:</label>
+            <input type="text" id="viewDoctorId" required><br>
+            <button type="submit">View Status</button>
+        </form>
+        <div id="doctorDetails"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
+
